@@ -1,2 +1,3 @@
-import {  } from './js/app';
+import { finder } from './js/app';
 
+finder();
