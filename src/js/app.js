@@ -1,15 +1,9 @@
-export function findBy () {
-  const arr = [
-    {name: 'маг', type: 'character', description: 'Персонаж, обладающий магическими способностями'},
-    {name: 'заклинание', type: 'attack', description: 'Атака магическим заклинанием'},
-    {name: 'урон', type: 'help', description: 'Страница описания элемента интерфейса'},
-  ];
-  const find = () => {
-    const result = arr.find(x => x.name === 'урон'); 
-    console.table(result);
+const findBy = (key, value) => {
+  const iteration = (x) => {
+    const result = x[key] === value;
+    return result === true ? x : null;
   };
-
-  return find;
+  return iteration;
 };
 
-export const finder = findBy();
+export default findBy;

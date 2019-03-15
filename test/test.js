@@ -1,5 +1,10 @@
-import { findBy } from '../src/js/app'
+import findBy from '../src/js/app';
 
 test('test', () => {
-  expect(arr).toBe({name: 'урон', type: 'help', description: 'Страница описания элемента интерфейса'});
+  const arr = [
+    { name: 'маг', type: 'character', description: 'Персонаж, обладающий магическими способностями' },
+    { name: 'заклинание', type: 'attack', description: 'Атака магическим заклинанием' },
+    { name: 'урон', type: 'help', description: 'Страница описания элемента интерфейса' },
+  ].filter(findBy('type', 'character'));
+  expect(arr).toEqual([{ name: 'маг', type: 'character', description: 'Персонаж, обладающий магическими способностями' }]);
 });
