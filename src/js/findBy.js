@@ -1,9 +1,9 @@
 const findBy = (key, value) => {
-  const iteration = (x) => {
+  const keyWords = (x) => {
     const result = x[key] === value;
     return result === true ? x : null;
   };
-  return iteration;
+  return keyWords;
 };
 
 export default findBy;

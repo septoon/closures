@@ -1,4 +1,4 @@
-import findBy from './js/app';
+import findBy from './js/findBy';
 
 const finder = findBy('type', 'character');
 
