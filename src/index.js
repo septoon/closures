@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 import findBy from './js/findBy';
 
 const finder = findBy('type', 'character');
